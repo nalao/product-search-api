@@ -10,3 +10,18 @@ exports.getById = (req, res) => {
     res.json(data);
   });
 };
+exports.add = (req, res) => {
+  index.add(req, (error, data) => {
+    res.json(data);
+  });
+};
+exports.edit = (req, res) => {
+  index.edit(req, (error, data) => {
+    res.json(data);
+  });
+};
+exports.delete = (req, res) => {
+  index.delete(req, (error, data) => {
+    res.json(data);
+  });
+};

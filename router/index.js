@@ -5,8 +5,8 @@ const controller = require("../controller/index");
 
 router.get("/all", controller.all);
 router.get("/get-by-id/:id", controller.getById);
-router.post("/add", controller.all);
-router.put("/edit/:id", controller.getById);
-router.delete("/delete/:id", controller.getById);
+router.post("/add", controller.add);
+router.put("/edit/:id", controller.edit);
+router.delete("/delete/:id", controller.delete);
 
 module.exports = router;
