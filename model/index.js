@@ -1,5 +1,4 @@
 const db = require("../config/conn");
-const e = require("express");
 
 const index = () => {};
 
