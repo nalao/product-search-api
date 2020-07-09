@@ -20,6 +20,11 @@ exports.edit = (req, res) => {
     res.json(data);
   });
 };
+exports.sale = (req, res) => {
+  index.sale(req, (error, data) => {
+    res.json(data);
+  });
+};
 exports.delete = (req, res) => {
   index.delete(req, (error, data) => {
     res.json(data);
